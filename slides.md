@@ -34,35 +34,23 @@ class: middle, center
 
 # Why?
 
-- Make life easier<sup>†</sup>
-- Save settings
-- Personalize your shell
+Make life easier<sup>†</sup>, save settings, personalize your shell
 
-<br>
-<br>
-<br>
-<br>
+![:scale 50%](images/dotfiles_drake.jpg)
+
 <sub><sup>†</sup>as long as you don't obsess about it too much!</sub>
 
 ???
 - Save some configuration that you repeat
 - Customize things to make it work for you
 - This is a highly personal thing
-
----
-class: middle, center
-
-![:scale 75%](images/dotfiles_drake.jpg)
-
-???
-You can go pretty far down the rabbit hole here...
+- You can go pretty far down the rabbit hole here...
 
 ---
 class: middle, center
 # Examples
 
 ???
-
 Before we dive in too deep, some examples
 
 ---
@@ -92,10 +80,28 @@ class: middle, center
 
 ![:scale 80%](images/this_presentation.png)
 
+???
+- On a linux machine
+- Writing this presentation in vim
+- Heavily customized but portable
+
 ---
 class: middle, center
 
-# How To Get Started?
+# Pick A Shell
+
+Bash, ZSH, Fish, etc.
+
+???
+- There are a lot of options out there
+- Bash or ZSH are some classic options
+- The more esoteric, the harder life might be
+- Fish is powerful, but not available on every machine
+
+---
+class: middle, center
+
+# Start Configuring
 
 ???
 Ever do something more than a few times?
@@ -236,10 +242,35 @@ Plethora of options including [yadm][yadm], [dotbot][dotbot] and [rcm][rcm]
 - too many options, the one you pick might die
 - specific to the authors way of doing it
 
+### Also
+
+- You could even use Ansible or SaltStack to do this
+- All about what you are comfortable with
+
 ---
 class: middle, center
 
-Finish me...
+# Not Just Your Shell
+
+???
+Configure REPLs for Python, MySQL
+Readline
+Git and other VCSes
+editors like vim and VS Code
+operating systems like NixOS
+tiling window managers like i3 in linux or chunk in macOS
+
+---
+class: top, left
+
+# Links
+
+- [My Dotfiles][dotfiles-claytron]
+- [GitHub Dotfiles](https://dotfiles.github.io/)
+- [Awesome Dotfiles](https://github.com/webpro/awesome-dotfiles)
+- [yadm and Homeschick Walkthrough](https://www.dedoimedo.com/computers/dotfiles-yadm-homeshick.html)
+
+Tons of awesome dotfiles repos on GitHub to find inspiration from, just search for the file you are trying to customize
 
 [/ Links ---------------------------------------------------------------- /]: #
 [fayettepy]: https://www.meetup.com/FayettePy-Python-Meetup
