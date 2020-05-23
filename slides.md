@@ -56,6 +56,8 @@ Before we dive in too deep, some examples
 ---
 class: middle, center
 
+Vanilla macOS terminal
+
 ![:scale 100%](images/macos_terminal_stock.png)
 
 ???
@@ -63,6 +65,8 @@ A stock macos terminal running ZSH, pretty boring affair
 
 ---
 class: middle, center
+
+Customized Kitty terminal, running tmux, with customized prompt, theme, fonts and aliases
 
 ![:scale 100%](images/macos_kitty_custom.png)
 
@@ -78,6 +82,8 @@ class: middle, center
 ---
 class: middle, center
 
+Writing this presentation in vim on Linux running i3 window manager
+
 ![:scale 80%](images/this_presentation.png)
 
 ???
@@ -90,7 +96,14 @@ class: middle, center
 
 # Pick A Shell
 
-Bash, ZSH, Fish, etc.
+Bash (widely available standard),
+
+ZSH (superset of Bash)
+
+Fish (newer generation with more advanced defaults)
+
+Other more esoteric options which might have less community support
+
 
 ???
 - There are a lot of options out there
@@ -103,6 +116,8 @@ class: middle, center
 
 # Start Configuring
 
+If you do something repetitively, add to your dotfiles
+
 ???
 Ever do something more than a few times?
 Then configure it!
@@ -110,6 +125,8 @@ Then configure it!
 
 ---
 class: middle, left
+
+Stock `ls` with no customization
 
 ```sh
 % ls
@@ -122,6 +139,8 @@ Stock `ls` doesn't give us much info or context
 
 ---
 class: middle, left
+
+Manually specify the switches to get more information
 
 ```sh
 % ls -alhF
@@ -142,6 +161,8 @@ drwxr-xr-x 2 clayton clayton 4.0K May 21 16:46 images/
 ---
 class: middle, left
 
+Add an alias and load the changes (or restart your terminal)
+
 ```sh
 % vim ~/.zshrc
 alias ll="ls -alhF"
@@ -156,6 +177,8 @@ alias ll="ls -alhF"
 
 ---
 class: middle, left
+
+Now you don't need to always specify the switches
 
 ```sh
 % ll
@@ -176,6 +199,8 @@ class: middle, center
 
 # What Next?
 
+Simple changes are easy, where do we go from here
+
 ???
 - That was easy, now what?
 - Keep modifying things piece by piece, or use a framework
@@ -195,6 +220,8 @@ class: middle, center
 
 # Multiple Machines
 
+Solutions for distributing your dotfiles
+
 ???
 - So now that we've customized this file
 - How do we get it to other machines
@@ -206,6 +233,8 @@ class: middle, center
 # Minimal solution
 
 Git + bash script
+
+Simplicity and learning all the things, but no advanced features without writing them all
 
 ???
 - Put dotfiles in a folder
@@ -227,6 +256,8 @@ class: middle, center
 # Dotfile manager
 
 Plethora of options including [yadm][yadm], [dotbot][dotbot] and [rcm][rcm]
+
+Lots of features and updates but with the potential cost of dependencies, updating woes and overhead
 
 ???
 ### Pros
@@ -251,6 +282,8 @@ Plethora of options including [yadm][yadm], [dotbot][dotbot] and [rcm][rcm]
 class: middle, center
 
 # Not Just Your Shell
+
+REPL, Readline, VCS, Editors, Operating Systems, Tiling Window Managers, etc.
 
 ???
 Configure REPLs for Python, MySQL
